@@ -1,0 +1,7 @@
+h1=hist(nbadata$FT/nbadata$FTA)
+h2=hist(nbadata$X2P/nbadata$X2PA)
+h3=hist(nbadata$X3P/nbadata$X3PA)
+plot( h1, col=rgb(0,0,1,1/4),ylim=c(0,300),main="Histogram of success rates",xlab="Success rate")
+plot( h2, col=rgb(1,0,0,1/4),ylim=c(0,300), add=T)
+plot( h3, col=rgb(0,1,0,1/4),ylim=c(0,300), add=T)
+legend('topleft',c('FT','2P','3P'),fill=c(rgb(0,0,1,1/4),rgb(1,0,0,1/4),rgb(0,1,0,1/4)))
